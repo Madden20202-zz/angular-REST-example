@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+// Allows use of the API 
+import { ApiService } from './api.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-REST-example';
+  // will allow the website to have the data locally
+  countryData = null;
+
+  constructor(private api:ApiService) {}
 }
