@@ -13,4 +13,10 @@ export class AppComponent {
   countryData = null;
 
   constructor(private api:ApiService) {}
+
+  ngOnInit() {
+    this.api.getCountries().subscribe((data)=>{
+      this.countryData = data;
+    })
+  }
 }
