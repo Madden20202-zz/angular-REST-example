@@ -3,9 +3,13 @@
 </head>
 
 <body>
-  <div class="title-card">
-    <h1>Country Finder</h1>
-  </div>
+  <h1> Welcome to {{ title }}!
+    <p *ngFor="'let country of CountryData">
+      {{country.name}}
+      Population: {{country.population}}
+      Location: {{country.latlng}}
+    </p>
+  </h1>
 
 
 </body>
