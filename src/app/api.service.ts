@@ -15,4 +15,9 @@ export class ApiService {
   // another point. This other 
   // point is usually a server
   constructor(private http:HttpClient) { }
+
+  getCountries() {
+
+    return this.http.get('https://restcounttries.eu/rest/v2/all');
+  }
 }
