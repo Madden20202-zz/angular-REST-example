@@ -4,7 +4,7 @@
 
 <body>
   <h1> Welcome to {{ title }}!
-    <p *ngFor="'let country of CountryData">
+    <p *ngFor="let country of countryData">
       {{country.name}}
       Population: {{country.population}}
       Location: {{country.latlng}}
