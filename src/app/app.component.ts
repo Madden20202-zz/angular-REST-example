@@ -10,13 +10,13 @@ import { ApiService } from './api.service';
 export class AppComponent {
   title = 'angular-REST-example';
   // will allow the website to have the data locally
-  countryData = null;
+  countryData: any;
 
   constructor(private api:ApiService) {}
 
   ngOnInit() {
     this.api.getCountries().subscribe((data)=>{
       this.countryData = data;
-    })
+    });
   }
 }
