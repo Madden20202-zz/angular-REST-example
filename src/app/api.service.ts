@@ -18,6 +18,6 @@ export class ApiService {
 
   getCountries() {
 
-    return this.http.get('https://restcounttries.eu/rest/v2/all');
+    return this.http.get('https://restcountries.eu/rest/v2/all');
   }
 }

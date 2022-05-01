@@ -9,6 +9,8 @@ export class DataComponent implements OnInit {
 
   constructor() { }
 
+  //@Input seems to need a type but was 
+  // not seen in tutorial or code
   @Input() country: any;
 
   ngOnInit(): void {

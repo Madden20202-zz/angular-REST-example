@@ -1,14 +1,4 @@
-<head>
-  <title>Country Finder</title>
-</head>
-
-<body>
-  <h1> Welcome to {{ title }}!
-    <p>
-     <app-data *ngFor='let country of CountryData' app-data [country]="country">
-     </app-data>
-    </p>
-  </h1>
-
-
-</body>
+<p>
+  <app-data *ngFor='let country of countryData' app-data [country]="country">
+  </app-data>
+</p>
