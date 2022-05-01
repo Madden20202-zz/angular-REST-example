@@ -9,7 +9,7 @@ export class DataComponent implements OnInit {
 
   constructor() { }
 
-  @Input() country;
+  @Input() country
   
   ngOnInit(): void {
   }
