@@ -18,7 +18,6 @@ export class ApiService {
 
   getCountries() {
     console.log('getCountries was called');
-    // return this.http.get('https://restcountries.eu/rest/v2/all');
     return this.http.get('https://restcountries.eu/rest/v2/all');
   }
 }
