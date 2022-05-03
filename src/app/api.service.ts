@@ -17,7 +17,8 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   getCountries() {
-
+    console.log('getCountries was called');
+    // return this.http.get('https://restcountries.eu/rest/v2/all');
     return this.http.get('https://restcountries.eu/rest/v2/all');
   }
 }

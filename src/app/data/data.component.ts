@@ -7,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DataComponent implements OnInit {
 
-  constructor() { }
-
-  //@Input seems to need a type but was 
-  // not seen in tutorial or code
+  //@Input needs an explicit type but was 
+  // not seen in tutorial 
   @Input() country: any;
+
+  constructor() { }
 
   ngOnInit(): void {
   }

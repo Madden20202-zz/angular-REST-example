@@ -18,5 +18,6 @@ export class AppComponent {
     this.api.getCountries().subscribe((data)=>{
       this.countryData = data;
     });
+    console.log('data was subscribed to');
   }
 }
