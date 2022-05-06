@@ -11,7 +11,14 @@ export class DataComponent implements OnInit {
   // not seen in tutorial 
   @Input() country: any;
 
-  constructor() { }
+  constructor() { 
+    // Still no value, could the link be bad?
+    this.printCountryValue();
+  }
+
+  printCountryValue() {
+    console.log(this.country);
+  }
 
   ngOnInit(): void {
   }
