@@ -14,11 +14,9 @@ export class AppComponent {
 
   constructor(private api:ApiService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.api.getCountries().subscribe((data)=>{
       this.countryData = data;
-      //data not coming up in console
-      console.log(data);
     });
   }
 }
