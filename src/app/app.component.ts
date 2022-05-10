@@ -21,8 +21,6 @@ export class AppComponent {
   findCountryData(): any {
     this.api.getCountries().subscribe((data)=> {
       this.countryData = data;
-      console.log(data);
-      return this.countryData;
     })
   }
 }
