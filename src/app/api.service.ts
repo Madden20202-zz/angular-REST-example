@@ -17,6 +17,9 @@ export class ApiService {
   constructor(private http:HttpClient) { }
 
   getCountries() {
+    // Make sure to check API website to 
+    // double check links to ensure the 
+    // proper info is used
     return this.http.get('https://restcountries.com/v3.1/all');
   }
 }
